@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="app.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="app-container">
+			<div class="sidebar">
+				<div class="logo-container">
+					<div class="logo">
+						<i class="bx bxl-c-plus-plus"></i>
+						<label>Code Studioo</label>
+					</div>
+					<i id="btn" class="bx bx-menu"></i>
+				</div>
+				<div class="search-container">
+					<i class="bx bx-search"></i>
+					<input
+						type="text"
+						name=""
+						id="search"
+						class="search"
+						placeholder="Search"
+					/>
+					<span class="tooltip">Search</span>
+				</div>
+				<div class="menu-container">
+					<ul>
+						<li class="active">
+							<i class="bx bxs-grid-alt"></i>
+							<a href="#">Dashboard One</a>
+							<span class="tooltip">Dashboard One</span>
+						</li>
+						<li>
+							<i class="bx bx-user"></i>
+							<a href="#">User</a>
+							<span class="tooltip">User</span>
+						</li>
+						<li>
+							<i class="bx bxs-message-rounded"></i>
+							<a href="#">Messager</a>
+							<span class="tooltip">Messager</span>
+						</li>
+						<li>
+							<i class="bx bxs-pie-chart-alt-2"></i>
+							<a href="#">Analytics</a>
+							<span class="tooltip">Analytics</span>
+						</li>
+						<li>
+							<i class="bx bx-folder"></i>
+							<a href="#">Folder</a>
+							<span class="tooltip">Folder</span>
+						</li>
+						<li>
+							<i class="bx bxs-cart"></i>
+							<a href="#">Order</a>
+							<span class="tooltip">Order</span>
+						</li>
+						<li>
+							<i class="bx bx-heart"></i>
+							<a href="#">Saved</a>
+							<span class="tooltip">Saved</span>
+						</li>
+						<li>
+							<i class="bx bxs-cog"></i>
+							<a href="#">Setting</a>
+							<span class="tooltip">Setting</span>
+						</li>
+					</ul>
+				</div>
+				<div class="profile-container">
+					<img src="profile.jpg" style="height: 40px" />
+					<div class="profile-details">
+						<div class="name">Gokul</div>
+						<div class="role">Web designer</div>
+					</div>
+					<i class="bx bx-log-out-circle"></i>
+				</div>
+			</div>
+			<div class="main-container"><label for="">Hello</label></div>
+		</div>
+		<script>
+			let btn = document.querySelector('#btn')
+			let sidebar = document.querySelector('.sidebar')
+			let searchBtn = document.querySelector('.bx-search')
+
+			btn.onclick = function () {
+				sidebar.classList.toggle('active')
+			}
+			searchBtn.onclick = function () {
+				sidebar.classList.toggle('active')
+			}
+		</script>
+	</body>
+</html>
